@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘管理系统-首页</title>
+    <!-- 引入css文件-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css"/>
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+</head>
+<body>
+<!-- 左侧侧边栏-->
+<div class="li_aside">
+    <div class="brand">
+        <a href="#">乐淘商店</a>
+    </div>
+    <div class="user">
+        <img src="./images/default.png" alt=""/>
+        <p>超级管理员</p>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="./user.html">
+                    <span class="glyphicon glyphicon-user"></span>
+                    用户管理
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-list"></span>
+                    分类管理
+                </a>
+                <div class="child" style="display: none">
+                    <a href="./one.html">一级分类</a>
+                    <a href="./two.html">二级分类</a>
+                </div>
+            </li>
+            <li>
+                <a class="now" href="./shangPin.html">
+                    <span class="glyphicon glyphicon-tags"></span>
+                    商品管理
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--右侧内容-->
+<div class="llt_main">
+
+    <!--顶部通栏-->
+    <div class=topbar>
+        <!--左侧按钮-->
+        <a class="pull-left btn_menu" href="#">
+            <span class="glyphicon glyphicon-align-justify"></span>
+        </a>
+        <!--右侧按钮-->
+        <a class="pull-right btn_logout" href="#">
+            <span class="glyphicon glyphicon-log-out"></span>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+        <!--面包屑导航栏 路径导航-->
+        <ol class="breadcrumb">
+            <li><a href="./index.html">管理系统</a></li>
+            <li class="active">首页</li>
+        </ol>
+
+        <!--柱状图-->
+        <div class="lt_content">
+
+        </div>
+    </div>
+</div>
+
+<!--退出功能  模态框-->
+<div class="modal fade" id="logoutModal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">温馨提示</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-danger">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    您确定要退出登录系统吗?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary btn_logout">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引入js文件-->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="lib/nprogress/nprogress.js"></script>
+<script src="lib/echarts/echarts.min.js"></script>
+<script src="js/commin.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
